@@ -1,4 +1,10 @@
+{{
+  config(
+    materialized = 'view',
+    )
+}}
+
 SELECT
      *
 FROM
-    `dbt-tutorial`.source.fact_sales
+    {{ source('source', 'fact_sales') }}
