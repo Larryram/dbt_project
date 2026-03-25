@@ -8,4 +8,13 @@ dbt_tutorial:
       threads: 1
       token: dapi66e186922acfceaa5a4d3417fb298b53
       type: databricks
+      
+    prod:
+      catalog: dbt_tutorial_prod
+      host: dbc-f4b6429d-5c2b.cloud.databricks.com
+      http_path: /sql/1.0/warehouses/86bebcd2098bcb77
+      schema: default
+      threads: 1
+      token: dapi66e186922acfceaa5a4d3417fb298b53
+      type: databricks
   target: dev
